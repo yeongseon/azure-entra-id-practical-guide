@@ -59,6 +59,8 @@ def extract_mslearn_urls(frontmatter: dict) -> List[str]:
     urls = set()
 
     content_sources = frontmatter.get("content_sources", {})
+    if isinstance(content_sources, list):
+        return list(urls)
     diagrams = content_sources.get("diagrams", [])
 
     for diagram in diagrams:
