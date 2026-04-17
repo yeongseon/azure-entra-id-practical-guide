@@ -2,6 +2,7 @@
 title: Playbook - Guest Access Denied
 description: Detailed playbook for guest user sign-in and access denials involving invitation state, redemption, and cross-tenant access controls.
 content_sources:
+  references:
     - title: Microsoft Entra B2B collaboration fundamentals
       url: https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b
       sections:
@@ -17,10 +18,13 @@ content_sources:
       sections:
         - Guest sign-in evidence
         - Failure investigation
-    - title: Diagram metadata
-      diagram_metadata:
-        - id: playbook-guest-access-denied
-          description: Investigation path for guest access denials and redemption problems.
+  diagrams:
+    - id: playbook-guest-access-denied
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn B2B collaboration and cross-tenant access documentation."
+      based_on:
+        - https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b
 content_validation:
     status: verified
     last_reviewed: 2026-04-17

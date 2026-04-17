@@ -2,6 +2,7 @@
 title: Playbook - Sync Errors in Hybrid Identity
 description: Detailed playbook for hybrid identity sync errors affecting cloud object freshness, sign-in state, and directory consistency.
 content_sources:
+  references:
     - title: Microsoft Entra hybrid identity concepts
       url: https://learn.microsoft.com/en-us/entra/identity/hybrid/whatis-hybrid-identity
       sections:
@@ -11,10 +12,13 @@ content_sources:
       url: https://learn.microsoft.com/en-us/graph/api/resources/user
       sections:
         - Sync-related user properties
-    - title: Diagram metadata
-      diagram_metadata:
-        - id: playbook-hybrid-sync-errors
-          description: Investigation path for hybrid sync errors and stale cloud identity state.
+  diagrams:
+    - id: playbook-hybrid-sync-errors
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn hybrid identity documentation."
+      based_on:
+        - https://learn.microsoft.com/en-us/entra/identity/hybrid/whatis-hybrid-identity
 ---
 
 # Playbook - Sync Errors in Hybrid Identity

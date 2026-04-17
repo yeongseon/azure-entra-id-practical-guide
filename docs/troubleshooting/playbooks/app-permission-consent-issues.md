@@ -2,6 +2,7 @@
 title: Playbook - App Permission Consent Issues
 description: Detailed playbook for app consent, admin approval, permission grant, and enterprise app assignment issues.
 content_sources:
+  references:
     - title: Microsoft Entra user consent configuration
       url: https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/configure-user-consent
       sections:
@@ -17,10 +18,13 @@ content_sources:
       sections:
         - App role assignment settings
         - Tenant-side enterprise app representation
-    - title: Diagram metadata
-      diagram_metadata:
-        - id: playbook-app-consent
-          description: Investigation path for app permission and consent issues.
+  diagrams:
+    - id: playbook-app-consent
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn consent and enterprise app documentation."
+      based_on:
+        - https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/configure-user-consent
 content_validation:
     status: verified
     last_reviewed: 2026-04-17

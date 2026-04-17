@@ -2,6 +2,7 @@
 title: Playbook - Token Issuance Failure
 description: Detailed playbook for token issuance failures caused by app registration, authority, scope, credentials, or claim expectations.
 content_sources:
+  references:
     - title: Microsoft identity platform protocols
       url: https://learn.microsoft.com/en-us/entra/identity-platform/v2-protocols
       sections:
@@ -15,10 +16,13 @@ content_sources:
       url: https://learn.microsoft.com/en-us/graph/api/resources/serviceprincipal
       sections:
         - Tenant-side app representation
-    - title: Diagram metadata
-      diagram_metadata:
-        - id: playbook-token-issuance
-          description: Investigation path for token issuance failures.
+  diagrams:
+    - id: playbook-token-issuance
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn identity platform and token endpoint documentation."
+      based_on:
+        - https://learn.microsoft.com/en-us/entra/identity-platform/v2-protocols
 ---
 
 # Playbook - Token Issuance Failure

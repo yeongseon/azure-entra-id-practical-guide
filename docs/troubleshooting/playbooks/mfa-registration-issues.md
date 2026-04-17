@@ -2,6 +2,7 @@
 title: Playbook - MFA Registration Issues
 description: Detailed playbook for resolving Microsoft Entra MFA registration, method usability, and authentication strength alignment issues.
 content_sources:
+  references:
     - title: Microsoft Entra authentication methods management
       url: https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage
       sections:
@@ -16,10 +17,13 @@ content_sources:
       url: https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-temporary-access-pass
       sections:
         - Recovery and bootstrap scenarios
-    - title: Diagram metadata
-      diagram_metadata:
-        - id: playbook-mfa-registration
-          description: Investigation path for MFA registration and method readiness issues.
+  diagrams:
+    - id: playbook-mfa-registration
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn authentication methods and strengths documentation."
+      based_on:
+        - https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage
 content_validation:
     status: verified
     last_reviewed: 2026-04-17

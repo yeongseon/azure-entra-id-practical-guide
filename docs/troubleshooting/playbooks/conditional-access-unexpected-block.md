@@ -2,6 +2,7 @@
 title: Playbook - Conditional Access Unexpected Block
 description: Detailed playbook for validating unexpected Conditional Access denials, authentication strength mismatches, and targeting drift.
 content_sources:
+  references:
     - title: Microsoft Entra Conditional Access overview
       url: https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview
       sections:
@@ -17,10 +18,13 @@ content_sources:
       sections:
         - Strength requirements
         - Method alignment
-    - title: Diagram metadata
-      diagram_metadata:
-        - id: playbook-conditional-access-block
-          description: Investigation path for unexpected Conditional Access blocks.
+  diagrams:
+    - id: playbook-conditional-access-block
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn Conditional Access and sign-in logs documentation."
+      based_on:
+        - https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview
 content_validation:
     status: verified
     last_reviewed: 2026-04-17

@@ -2,6 +2,7 @@
 title: Playbook - Sign-in Failure Investigation
 description: Detailed playbook for isolating user sign-in failures across user state, MFA, Conditional Access, and application configuration.
 content_sources:
+  references:
     - title: Microsoft Entra sign-in logs overview
       url: https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-sign-ins
       sections:
@@ -11,10 +12,13 @@ content_sources:
       url: https://learn.microsoft.com/en-us/graph/api/resources/signin
       sections:
         - Sign-in fields and outcomes
-    - title: Diagram metadata
-      diagram_metadata:
-        - id: playbook-sign-in-failure
-          description: Investigation path for generic sign-in failures.
+  diagrams:
+    - id: playbook-sign-in-failure
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn sign-in logs documentation."
+      based_on:
+        - https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-sign-ins
 content_validation:
     status: verified
     last_reviewed: 2026-04-17
