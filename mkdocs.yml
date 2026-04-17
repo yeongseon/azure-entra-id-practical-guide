@@ -1,0 +1,174 @@
+site_name: Azure Entra ID Practical Guide
+site_url: https://yeongseon.github.io/azure-entra-id-practical-guide/
+site_description: Comprehensive guide for Microsoft Entra ID — identity management, authentication, conditional access, and governance
+site_author: yeongseon
+
+repo_name: yeongseon/azure-entra-id-practical-guide
+repo_url: https://github.com/yeongseon/azure-entra-id-practical-guide
+
+theme:
+  name: material
+  language: en
+  favicon: assets/images/favicon.svg
+  logo: assets/images/favicon.svg
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+  custom_dir: docs
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - javascripts/mermaid-zoom.js
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.mark
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - toc:
+      permalink: true
+
+validation:
+  nav:
+    omitted_files: warn
+  links:
+    not_found: warn
+    anchors: warn
+    absolute_links: warn
+    unrecognized_links: warn
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yeongseon/azure-entra-id-practical-guide
+
+nav:
+  - Home: index.md
+  - Start Here:
+    - start-here/overview.md
+    - start-here/learning-paths.md
+    - start-here/repository-map.md
+  - Platform:
+    - platform/index.md
+    - platform/how-entra-id-works.md
+    - platform/tenants-and-directories.md
+    - platform/users-and-groups.md
+    - platform/app-registrations-and-service-principals.md
+    - platform/managed-identities.md
+    - platform/authentication-methods.md
+    - platform/oauth2-and-oidc.md
+    - platform/tokens-and-claims.md
+  - Best Practices:
+    - best-practices/index.md
+    - best-practices/tenant-design.md
+    - best-practices/security-defaults-and-mfa.md
+    - best-practices/conditional-access-design.md
+    - best-practices/least-privilege-rbac.md
+    - best-practices/app-registration-hygiene.md
+    - best-practices/identity-protection.md
+    - best-practices/cost-optimization.md
+  - Scenarios:
+    - scenarios/index.md
+    - App Registration:
+      - scenarios/app-registration/index.md
+      - scenarios/app-registration/web-app-auth.md
+      - scenarios/app-registration/api-permissions.md
+    - Conditional Access:
+      - scenarios/conditional-access/index.md
+      - scenarios/conditional-access/mfa-enforcement.md
+      - scenarios/conditional-access/device-compliance.md
+    - Hybrid Identity:
+      - scenarios/hybrid-identity/index.md
+      - scenarios/hybrid-identity/entra-connect-sync.md
+      - scenarios/hybrid-identity/cloud-sync.md
+    - B2B Collaboration:
+      - scenarios/b2b-collaboration/index.md
+      - scenarios/b2b-collaboration/guest-user-management.md
+      - scenarios/b2b-collaboration/cross-tenant-access.md
+    - Governance:
+      - scenarios/governance/index.md
+      - scenarios/governance/access-reviews.md
+      - scenarios/governance/entitlement-management.md
+  - Operations:
+    - operations/index.md
+    - operations/user-lifecycle-management.md
+    - operations/group-management.md
+    - operations/app-consent-management.md
+    - operations/conditional-access-management.md
+    - operations/sign-in-log-analysis.md
+    - operations/audit-log-analysis.md
+    - operations/identity-secure-score.md
+  - Troubleshooting:
+    - troubleshooting/index.md
+    - troubleshooting/architecture-overview.md
+    - troubleshooting/mental-model.md
+    - troubleshooting/decision-tree.md
+    - First 10 Minutes:
+      - troubleshooting/first-10-minutes/index.md
+      - troubleshooting/first-10-minutes/sign-in-failure.md
+      - troubleshooting/first-10-minutes/mfa-lockout.md
+      - troubleshooting/first-10-minutes/conditional-access-block.md
+      - troubleshooting/first-10-minutes/app-consent-error.md
+    - Playbooks:
+      - troubleshooting/playbooks/index.md
+      - troubleshooting/playbooks/sign-in-failure-investigation.md
+      - troubleshooting/playbooks/conditional-access-unexpected-block.md
+      - troubleshooting/playbooks/mfa-registration-issues.md
+      - troubleshooting/playbooks/guest-access-denied.md
+      - troubleshooting/playbooks/token-issuance-failure.md
+      - troubleshooting/playbooks/app-permission-consent-issues.md
+      - troubleshooting/playbooks/sync-errors-hybrid-identity.md
+  - Reference:
+    - reference/index.md
+    - reference/cli-cheatsheet.md
+    - reference/graph-api-quick-reference.md
+    - reference/platform-limits.md
+    - reference/error-codes.md
+  - Contributing:
+    - contributing/index.md
