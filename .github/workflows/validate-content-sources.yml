@@ -95,7 +95,7 @@ jobs:
     name: Validate MSLearn URLs
     runs-on: ubuntu-latest
     # Only run on push to main to avoid rate limiting
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     
     steps:
       - name: Checkout repository
