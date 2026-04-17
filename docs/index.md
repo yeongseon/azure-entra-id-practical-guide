@@ -158,3 +158,4 @@ This repository prioritizes practical Azure outcomes:
 - https://learn.microsoft.com/en-us/entra/fundamentals/whatis
 - https://learn.microsoft.com/en-us/entra/fundamentals/entra-admin-center
 - https://learn.microsoft.com/en-us/entra/identity-platform/v2-protocols
+
