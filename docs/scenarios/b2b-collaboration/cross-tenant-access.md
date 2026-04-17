@@ -3,6 +3,9 @@ title: Configure Cross-Tenant Access Settings
 content_sources:
   diagrams:
     - id: cross-tenant-access-trust-flow
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: Inbound and outbound cross-tenant access trust design.
   sources:
     - title: Cross-tenant access settings overview

@@ -3,6 +3,9 @@ title: Configure Microsoft Entra Connect Sync
 content_sources:
   diagrams:
     - id: entra-connect-sync-flow
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: Entra Connect Sync architecture and password hash sync path.
   sources:
     - title: What is Microsoft Entra Connect Sync

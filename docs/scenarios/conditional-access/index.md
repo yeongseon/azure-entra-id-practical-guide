@@ -3,6 +3,9 @@ title: Conditional Access Scenarios
 content_sources:
   diagrams:
     - id: conditional-access-scenarios-map
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: Policy evaluation path for Conditional Access scenarios.
   sources:
     - title: Conditional Access overview

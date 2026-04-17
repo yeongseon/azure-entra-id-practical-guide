@@ -3,6 +3,9 @@ title: Configure Entitlement Management
 content_sources:
   diagrams:
     - id: entitlement-management-access-package-flow
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: Catalog, access package, policy, and approval flow.
   sources:
     - title: Entitlement management overview

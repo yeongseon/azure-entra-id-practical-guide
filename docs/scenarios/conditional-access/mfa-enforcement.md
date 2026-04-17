@@ -3,6 +3,9 @@ title: Enforce MFA with Conditional Access
 content_sources:
   diagrams:
     - id: conditional-access-mfa-flow
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: MFA policy evaluation and staged rollout pattern.
   sources:
     - title: Require multifactor authentication for all users

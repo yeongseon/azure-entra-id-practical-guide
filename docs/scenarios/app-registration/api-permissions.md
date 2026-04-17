@@ -3,6 +3,9 @@ title: Configure API Permissions
 content_sources:
   diagrams:
     - id: api-permissions-consent-model
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: Delegated and application permission consent path.
   sources:
     - title: Configure app access to web APIs

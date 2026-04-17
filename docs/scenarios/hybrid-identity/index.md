@@ -3,6 +3,9 @@ title: Hybrid Identity Scenarios
 content_sources:
   diagrams:
     - id: hybrid-identity-scenarios-map
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: Hybrid identity synchronization options map.
   sources:
     - title: Hybrid identity solutions overview

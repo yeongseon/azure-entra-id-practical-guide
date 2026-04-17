@@ -3,6 +3,9 @@ title: Governance Scenarios
 content_sources:
   diagrams:
     - id: governance-scenarios-map
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: Governance controls for periodic review and policy-based access.
   sources:
     - title: Identity governance overview

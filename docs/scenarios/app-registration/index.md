@@ -3,6 +3,9 @@ title: App Registration Scenarios
 content_sources:
   diagrams:
     - id: app-registration-scenarios-map
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: Relationship between app registration, tokens, and permissions.
   sources:
     - title: Application management in Microsoft Entra ID

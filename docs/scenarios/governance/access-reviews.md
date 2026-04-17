@@ -3,6 +3,9 @@ title: Create Access Reviews
 content_sources:
   diagrams:
     - id: governance-access-review-cycle
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: Access review cycle with reviewer decision and auto-apply outcome.
   sources:
     - title: Access reviews overview

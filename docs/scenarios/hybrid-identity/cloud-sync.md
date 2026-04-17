@@ -3,6 +3,9 @@ title: Configure Microsoft Entra Cloud Sync
 content_sources:
   diagrams:
     - id: cloud-sync-agent-flow
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: Cloud Sync provisioning agent architecture.
   sources:
     - title: What is Microsoft Entra Cloud Sync

@@ -3,6 +3,9 @@ title: B2B Collaboration Scenarios
 content_sources:
   diagrams:
     - id: b2b-collaboration-scenarios-map
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: External collaboration patterns in Microsoft Entra ID.
   sources:
     - title: B2B collaboration overview

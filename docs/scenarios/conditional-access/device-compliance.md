@@ -3,6 +3,9 @@ title: Require Compliant Devices with Conditional Access
 content_sources:
   diagrams:
     - id: conditional-access-device-compliance-flow
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: Device compliance and Conditional Access integration path.
   sources:
     - title: Require device to be marked as compliant

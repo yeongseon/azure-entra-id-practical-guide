@@ -3,6 +3,9 @@ title: Scenarios
 content_sources:
   diagrams:
     - id: scenarios-overview-map
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: Scenario map for the practical guide.
   sources:
     - title: Microsoft Entra architecture and deployment guidance

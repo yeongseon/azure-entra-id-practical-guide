@@ -3,6 +3,9 @@ title: Manage Guest Users for B2B Collaboration
 content_sources:
   diagrams:
     - id: b2b-guest-user-lifecycle
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: Invitation, redemption, assignment, and review lifecycle for guest users.
   sources:
     - title: Add B2B collaboration users

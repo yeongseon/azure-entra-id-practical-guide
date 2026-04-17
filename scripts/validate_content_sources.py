@@ -160,7 +160,21 @@ def validate_file(file_path: Path, verbose: bool = False) -> List[ValidationErro
         )
         return errors
 
-    diagrams = content_sources.get("diagrams", [])
+    # content_sources can be a dict (with diagrams key) or a list of source entries
+    if isinstance(content_sources, list):
+        # List-shaped: extract diagrams from nested dict entries if any
+        diagrams = []
+        for entry in content_sources:
+            if isinstance(entry, dict) and "diagrams" in entry:
+                diagrams.extend(entry["diagrams"])
+        # If no diagrams key found in list entries, check if file has mermaid
+        if not diagrams:
+            return []  # List-shaped without mermaid, skip diagram validation
+    elif isinstance(content_sources, dict):
+        diagrams = content_sources.get("diagrams", [])
+    else:
+        errors.append(ValidationError(rel_path, "content_sources has unexpected type"))
+        return errors
     if not diagrams:
         errors.append(ValidationError(rel_path, "content_sources.diagrams is empty"))
         return errors

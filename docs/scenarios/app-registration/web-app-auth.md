@@ -3,6 +3,9 @@ title: Configure Web App Authentication
 content_sources:
   diagrams:
     - id: web-app-auth-code-flow
+      type: flowchart
+      source: self-generated
+      justification: "Synthesized from Microsoft Learn documentation"
       description: Authorization code flow for a Microsoft Entra ID web app.
   sources:
     - title: Quickstart - sign in users in a web app
